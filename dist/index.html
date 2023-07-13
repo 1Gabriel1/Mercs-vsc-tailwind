@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Studio Code</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+        <header class="header">
+            <div class="container">
+                <div class="flex bg-[#2c2c32] px-[15px] justify-between items-center">
+                    <div class="header__title flex pt-[15px] pb-[15px] pr-[15px] gap-2 items-center">
+                        <div class="header__logo ">
+                         <a href="#"><img class="max-w-[24px] max-h-[24px] w-[100%] h-[100%]" src="./img/download.png" alt=""></a>
+                        </div>
+                        <div class="header__logoT text-white">
+                            <h1 class="text-[20px]"><a href="#">Visual Studio Code</a></h1>
+                        </div>
+                    </div>
+                    <div class="header__nav">
+                        <nav class="p-[2.25rem] top-0 absolute right-[-100vw]  h-[100vh] w-[-100vw] duration-500 ease-in-out">
+                            <ul class="block pr-[16rem] items-center">
+                                <li><a href="#"></a>Docs</li>
+                                <li><a href="#"></a>Updates</li>
+                                <li><a href="#"></a>Blog</li>
+                                <li><a href="#"></a>API</li>
+                                <li><a href="#"></a>Extensions</li>
+                                <li><a href="#"></a>FAQ</li>
+                                <li><a href="#"></a>Learn</li>
+                                <li><a href="#"></a>Search</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- <div>
+                        <input type="search">
+                    </div> -->
+                    <div class="toggle__menu">
+                        <span class="block bg-[#fff] w-6 h-[2px] mb-1"></span>
+                        <span class="block bg-[#fff] w-6 h-[2px] mb-1"></span>
+                        <span class="block bg-[#fff] w-6 h-[2px] mb-1"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="version">
+            <div class="container">
+                <div class="version__wrapper bg-[#25252b]">
+                    <div class=" py-[10px]">
+                        <div class="text-center px-[56px]">
+                            <p class="text-[1rem] text-center text-white "><a href="#" class="text-[1rem] text-blue-600 underline ">Version 1.80</a> is now available! Read about the new features and fixes from June.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dl">
+            <div class="container">
+                <div class="dl__wrapper bg-[#2c2c32]">
+                    <div class="dl__header pt-[10px] pb-[20px] text-center">
+                        <h1 class="text-[42.5px] text-white">Code editing.</h1>
+                        <span class="text-[42.5px] font- text-white"><strong>Redefined.</strong></span>
+                    </div>
+                    <div>
+                        <p class="text-[#8aa2a5] text-center">Free. Built on open source. Runs everywhere.</p>
+                    </div>
+                    <div>
+                        <div>
+                            <button class="text-center"></button>
+                        </div>
+                        <div>
+                            <button></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const toggle = document.querySelector('.toggle__menu');
+            const menu = document.querySelector('.header__nav');
+        
+        
+            toggle.addEventListener('click', () => {
+                toggle.classList.toggle('open');
+                menu.classList.toggle('open');
+            });
+        </script>
+</body>
+</html>
