@@ -4,5 +4,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet');   
 
 .container {
-    @apply mx-auto max-w-[140rem] w-full;
+    @apply mx-auto max-w-[90rem] w-full;
+}
+
+.platform::before {
+content: "";
+position: absolute;
+width: 0px;
+height: 0px;
+border-left: 15px solid transparent;
+border-right: 15 px solid transparent;
+border-bottom: 15px solid #25252B;
+top: -15px;
+right: 10px;
+}
+
+.features {
+    @apply py-[3.1875rem]
 }
