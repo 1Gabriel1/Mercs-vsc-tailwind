@@ -19,6 +19,38 @@ top: -15px;
 right: 10px;
 }
 
-.features {
+.features{
+    @apply max-w-[90rem] w-full mx-auto
+}
+.features__item {
     @apply py-[3.1875rem]
 }
+.features__content {
+    @apply px-[0.94rem]
+}
+.features__item:nth-child(odd){
+    @apply flex flex-col items-center
+}
+.features__item:nth-child(even){
+    @apply flex flex-col items-center bg-[#f5f5f5]
+}
+.features__item img{
+    @apply  object-cover w-[60%]
+}
+.features__content h1{
+    @apply mt-[.65rem] mb-[1.2rem] text-[1.2rem] font-thin text-[#242424]
+}
+.features__content p{
+    @apply mb-[.625rem] text-[0.875125rem] font-normal text-justify
+}
+.features__content a{
+    @apply text-[#0071BC] text-[0.875125rem] font-normal text-justify
+}
+
+.vsC__item {
+    @apply px-[0.9375rem] mb-[0.625rem] text-[0.95rem] font-normal
+}
+.vsC__wrap h2{
+    @apply text-[1.125rem] font-light
+} 
+
