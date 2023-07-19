@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js">
 </head>
     <body>
-        <header class="header">
+        <header class="header bg-[#2c2c32] relative">
             <div class="container">
-                <div class="flex bg-[#2c2c32] px-[15px] justify-between items-center">
+                <div class="flex px-[15px] justify-between items-center">
                     <div class="header__title flex pb-[15px] pr-[15px] gap-2 items-center max-h-[2.8rem] h-[100%]">
                         <div class="header__logo  pt-[15px]">
                          <a href="#"><img class="max-w-[22px] max-h-[22px] w-[100%] h-[100%]" src="./img/download.png" alt=""></a>
@@ -20,23 +20,26 @@
                             <h1 class="text-[1.15rem] "><a href="#">Visual Studio Code</a></h1>
                         </div>
                     </div>
-                    <div class="header__nav">
-                        <nav class="p-[2.25rem] top-0 absolute right-[-100vw]  h-[100vh] w-[-100vw] duration-500 ease-in-out">
-                            <ul class="block pr-[16rem] items-center">
-                                <li><a href="#"></a>Docs</li>
-                                <li><a href="#"></a>Updates</li>
-                                <li><a href="#"></a>Blog</li>
-                                <li><a href="#"></a>API</li>
-                                <li><a href="#"></a>Extensions</li>
-                                <li><a href="#"></a>FAQ</li>
-                                <li><a href="#"></a>Learn</li>
-                                <li><a href="#"></a>Search</li>
+                    <div class="header__nav bg-[#2c2c32] overflow-hidden top-[-20vh] left-0 absolute h-[100vh] w-[100vw] duration-700 ease">
+                        <nav class="">
+                            <ul class="items-center text-white leading-10">
+                                <li class="py-[10px] px-[12px]"><a href="#">Docs</a></li>
+                                <li class="py-[10px] px-[12px]"><a href="#">Updates</a></li>
+                                <li class="py-[10px] px-[12px]"><a href="#">Blog</a></li>
+                                <li class="py-[10px] px-[12px]"><a href="#">API</a></li>
+                                <li class="py-[10px] px-[12px]"><a href="#">Extensions</a></li>
+                                <li class="py-[10px] px-[12px]"><a href="#">FAQ</a></li>
+                                <li class="py-[10px] px-[12px]"><a href="#">Learn</a></li>
+                                <li class="py-[10px] px-[12px]"><a href="#">Search</a></li>
+                                <li class="py-[10px] px-[12px]"><a href="#">Search</a></li>
+                                <li class="bg-[#0066B8] w-full py-[10px] px-[12px]"><a href="#"><i class="fa-solid fa-download"></i> Download</a></li>
                             </ul>
                         </nav>
+                            <div class="hidden xl:flex xl:gap-2">
+                                <input type="search" placeholder="Search">
+                                <button><a href="#">Download</a></button>
+                            </div>
                     </div>
-                    <!-- <div>
-                        <input type="search">
-                    </div> -->
                     <div class="toggle__menu mt-[8px] mb-[8px] mr-[15px]">
                         <span class="block bg-[#fff] w-[21px] h-[2px] mb-1"></span>
                         <span class="block bg-[#fff] w-[21px] h-[2px] mb-1"></span>
@@ -58,13 +61,14 @@
 
         <section class="dl bg-[#2c2c32]">
             <div class="container">
-                <div class="dl__wrapper">
-                    <div class="dl__header pt-[18px] text-center leading-[48px] max-h-[93.5] h-[100%]">
-                        <h1 class="text-[2.5rem] text-white font-light">Code editing.</h1>
-                        <span class="text-[2.5rem] font- text-white font-light top-0"><strong>Redefined.</strong></span>
+                <div class="dl__wrapper lg:flex lg:justify-center lg:gap-5 xl: pb-10">
+                    <div class="lg:mt-10">
+                    <div class="dl__header pt-[18px] text-center leading-[48px] xl:leading-[60px]">
+                        <h1 class="text-[2.5rem] text-white font-light lg:text-[2.75rem] xl:text-[3.125rem]">Code editing.</h1>
+                        <span class="text-[2.5rem] font- text-white font-light top-0  xl:text-[3.125rem]"><strong>Redefined.</strong></span>
                     </div>
                     <div class="max-h-[21.41px] h-[100%]">
-                        <p class="text-[#ffffff99] text-center font-light text-[0.95rem]">Free. Built on open source. Runs everywhere.</p>
+                        <p class="text-[#ffffff99] text-center font-light text-[0.95rem] xl:text-[1.125rem]">Free. Built on open source. Runs everywhere.</p>
                     </div>
                     <div class="flex text-center gap-[2px] items-center text-white justify-center mt-[21.25px]">
                         <div class="text-center bg-[#0066B8] max-w-[15.5rem] w-[100%]">
@@ -74,41 +78,44 @@
                             </button>
                         </div>
                         <div class="bg-[#0066B8] text-center">
-                            <button class="p-[9.8px] text-[26px]">
+                            <button class="p-[9.85px] text-[26px]">
                                 <i class="fa-solid fa-angle-down"></i>
                             </button>
                         </div>
                     </div>
-                    <div class="text-center mt-3 ">
-                        <div class="ml-[20%] mx-auto">
-                             <p class="text-[#cccccc] text-[0.75rem] bg-[#25252B] p-2"><a class="text-[#0098ff] underline" href="#">Web</a>, <a class="text-[#0098ff] underline" class="text-[#0098ff] underline" href="#">Insiders edition </a>, or <a  class="text-[#0098ff] underline" href="#">other platforms</a></p>
+                        <div class="platform relative bg-[#25252B] text-center p-2 max-w-[293px] w-[100%] rounded-md mx-auto mt-[1rem]">
+                             <p class="text-[#cccccc] text-[0.75rem] text-center inline-block"><a class="text-[#0098ff] underline" href="#">Web</a>, <a class="text-[#0098ff] underline" class="text-[#0098ff] underline" href="#">Insiders edition </a>, or <a  class="text-[#0098ff] underline" href="#">other platforms</a></p>
+                        </div>
+                        <div class="mt-[0.6rem]">
+                            <p class="text-[#ffffff99] text-[0.75rem] text-center ">By using VS Code, you agree to its<br> <a class="text-[#0098FF] text-center text-[0.75rem]" href="#">license and privacy statement.</a></p>
                         </div>
                     </div>
-                    <div>
-
+                    <div >
+                        <img class="w-[80%] bg-cover mx-auto lg:w-[100%] lg:max-w-[616px] lg:max-h-[418px] lg:h-[100%] lg:bg-none lg:mt-[1.85rem] lg:mb-[2rem] xl:w-[100%] xl:max-w-[750px] xl:max-h-[590px] xl:h-[100%] xl:bg-none xl:mt-[1.85rem] xl:mb-[2rem] " src="./img/home-screenshot-win.png" alt="">
                     </div>
+                </div>
                 </div>
             </div>
         </section>
 
         <section class="exe">
             <div class="container">
-                <div class="exe__wrapper grid grid-cols-2 text-center ">
+                <div class="exe__wrapper grid grid-cols-2 text-center md:flex md:justify-evenly">
                     <div class="px-[15px] py-[17px]">
                         <i class="fa-regular fa-lightbulb text-[2.65625rem] mb-2 "></i>
-                        <p class="text-[20px]">IntelliSense</p>
+                        <p class="text-[1rem] md:text-[1.05rem] xl:text-[1.25rem] ">IntelliSense</p>
                     </div>
                     <div class="px-[15px] py-[17px]">
                         <i class="fa-solid fa-play text-[2.65625rem] mb-2"></i>
-                        <p class="text-[20px]">Run and Debug</p>
+                        <p class="text-[1rem] md:text-[1.05rem] xl:text-[1.25rem] ">Run and Debug</p>
                     </div>
                     <div class="px-[15px] py-[17px]">
                         <i class="fa-solid fa-code-branch text-[2.65625rem] mb-2"></i>
-                        <p class="text-[20px]">Built-in Git</p>
+                        <p class="text-[1rem] md:text-[1.05rem] xl:text-[1.25rem] ">Built-in Git</p>
                     </div>
                     <div class="px-[15px] py-[17px]">
                         <i class="fa-solid fa-box-open text-[2.65625rem] mb-2"></i>
-                        <p class="text-[20px]">Extensions</p>
+                        <p class="text-[1rem] md:text-[1.05rem] xl:text-[1.25rem] ">Extensions</p>
                     </div>
                 </div>
             </div>
@@ -118,47 +125,8 @@
             <div class="container">
                 <div class="fback__pad py-[6rem] px-[0.9375rem]">
                     <div class="p-[0.53125rem]">
-                        <div class="fback__content pt-[0.9375rem] px-[3.1875rem] grid grid-cols-1">
+                        <div class="fback__content pt-[0.9375rem] px-[3.1875rem] grid grid-cols-1 lg:grid-cols-3 lg:gap-2">
                             <div class="fback__items flex gap-2 justify-start text-[0.531rem]">
-                                <div class=fback__img>
-                                    <img class="rounded-[50%]" src="http://via.placeholder.com/200x200" alt="#">
-                                </div>
-                                <div class="fback__feed p-[5px]">
-                                    <div class="flex justify-between">
-                                        <h6 class="text-[0.75rem] font-medium"><strong>Pavithra Kodmad</strong></h6>
-                                        <i class="fa-brands fa-twitter text-[.82rem] text-[#6E6E6E]"></i>
-                                    </div>
-                                    <span class="text-[#6E6E6E] text-[0.625rem]">@PKodmad</span>
-                                    <p class="text-[0.956rem]">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy! </p>
-                                </div>
-                            </div>
-                            <div class="fback__items flex gap-2 justify-start">
-                                <div class=fback__img>
-                                    <img class="rounded-[50%]" src="http://via.placeholder.com/200x200" alt="#">
-                                </div>
-                                <div class="fback__feed p-[5px]">
-                                    <div class="flex justify-between">
-                                        <h6 class="text-[0.75rem] font-medium"><strong>Pavithra Kodmad</strong></h6>
-                                        <i class="fa-brands fa-twitter text-[.82rem] text-[#6E6E6E]"></i>
-                                    </div>
-                                    <span class="text-[#6E6E6E] text-[0.625rem]">@PKodmad</span>
-                                    <p class="text-[0.956rem]">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy! </p>
-                                </div>
-                            </div>
-                            <div class="fback__items flex gap-2 justify-start">
-                                <div class=fback__img>
-                                    <img class="rounded-[50%]" src="http://via.placeholder.com/200x200" alt="#">
-                                </div>
-                                <div class="fback__feed p-[5px]">
-                                    <div class="flex justify-between">
-                                        <h6 class="text-[0.75rem] font-medium"><strong>Pavithra Kodmad</strong></h6>
-                                        <i class="fa-brands fa-twitter text-[.82rem] text-[#6E6E6E]"></i>
-                                    </div>
-                                    <span class="text-[#6E6E6E] text-[0.625rem]">@PKodmad</span>
-                                    <p class="text-[0.956rem]">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy! </p>
-                                </div>
-                            </div>
-                            <div class="fback__items flex gap-2 justify-start">
                                 <div class=fback__img>
                                     <img class="rounded-[50%]" src="http://via.placeholder.com/200x200" alt="#">
                                 </div>
@@ -247,7 +215,7 @@
             <div class="container py-[3.75rem]">
                 <div class="vsC__wrap text-center">
                     <h2 class=" mb-[2.5rem]">VS Code for</h2>
-                    <div class="vsC__content grid grid-cols-2 mx-auto leading-8">
+                    <div class="vsC__content grid grid-cols-2 mx-auto leading-8 lg:grid-cols-6 lg:w-[80%]">
                         <div class="vsC__item flex">
                             <img src="./img/javascript.svg" alt="">
                             <p>JavaScript</p>
@@ -308,10 +276,10 @@
         <section class="inst">
             <div class="container">
                 <div class="inst__wrapper py-[3.5rem]">
-                    <div class="inst__content">
+                    <div class="inst__content lg:grid lg:grid-cols-3">
                         <div class="inst__items px-[1.5575rem]">
-                            <div class="w-[25%] mx-auto">
-                                <img src="./img/windows-logo.png" alt="">
+                            <div class=" mx-auto">
+                                <img class="max-w-[100px] w-full max-h-[100px] h-full mx-auto" src="./img/windows-logo.png" alt="">
                             </div>
                             <div class="text-center">
                                 <button class="text-center mb-[1.75rem] mt-[2rem] py-[0.5rem] px-[3.43rem] bg-[#0066B8] text-white">
@@ -319,9 +287,9 @@
                                     <p class="text-[0.75rem]"><small>Windows 8, 10, 11</small></p>
                                 </button>
                             </div>
-                            <div class="grid grid-cols-2 mx-auto">
+                            <div class="grid grid-cols-2 mx-auto gap-2">
                                 <div>
-                                    <ul class="text-center">
+                                    <ul class="text-end">
                                         <li class="text-[.9rem]"><strong>User Installer</strong></li>
                                     </ul>
                                 </div>
@@ -333,9 +301,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="grid grid-cols-2 mx-auto">
+                            <div class="grid grid-cols-2 mx-auto gap-2">
                                 <div>
-                                    <ul class="text-center">
+                                    <ul class="text-end">
                                         <li class="text-[.9rem]"><strong>System Installer</strong></li>
                                     </ul>
                                 </div>
@@ -347,9 +315,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="grid grid-cols-2 mx-auto">
+                            <div class="grid grid-cols-2 mx-auto gap-2">
                                 <div>
-                                    <ul class="text-center">
+                                    <ul class="text-end">
                                         <li class="text-[.9rem]"><strong>.zip</strong></li>
                                     </ul>
                                 </div>
@@ -361,9 +329,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="grid grid-cols-2 mx-auto">
+                            <div class="grid grid-cols-2 mx-auto gap-2">
                                 <div>
-                                    <ul class="text-center">
+                                    <ul class="text-end">
                                         <li class="text-[.9rem]"><strong>CLI</strong></li>
                                     </ul>
                                 </div>
@@ -377,18 +345,22 @@
                             </div>
                         </div>
                         <div class="inst__items px-[1.5575rem]">
-                            <div class="w-[25%] mx-auto">
-                                <img src="./img/linux-logo.png" alt="">
+                            <div class="">
+                                <img class="max-w-[100px] w-full max-h-[100px] h-full mx-auto" src="./img/linux-logo.png" alt="">
                             </div>
-                            <div class="text-center">
+                            <div class="text-center flex gap-1  mx-auto justify-center">
                                 <button class="text-center mb-[1.75rem] mt-[2rem] py-[0.5rem] px-[3.43rem] bg-[#0066B8] text-white">
-                                    <h6 class="font-medium text-[0.95rem]"><i class="fa-solid fa-download"></i> Windows</h6>
-                                    <p class="text-[0.75rem]"><small>Windows 8, 10, 11</small></p>
+                                    <h6 class="font-medium text-[0.95rem]"><i class="fa-solid fa-download"></i> .deb</h6>
+                                    <p class="text-[0.75rem]"><small>Debian, Ubuntu</small></p>
+                                </button>
+                                <button class="text-center mb-[1.75rem] mt-[2rem] py-[0.5rem] px-[3.43rem] bg-[#0066B8] text-white">
+                                    <h6 class="font-medium text-[0.95rem]"><i class="fa-solid fa-download"></i> .rpm</h6>
+                                    <p class="text-[0.75rem]"><small>Red Hat, Fedora, Suse</small></p>
                                 </button>
                             </div>
-                            <div class="grid grid-cols-2 mx-auto">
+                            <div class="grid grid-cols-2 mx-auto gap-2">
                                 <div>
-                                    <ul class="text-center">
+                                    <ul class="text-end ">
                                         <li class="text-[.9rem]"><strong>.deb</strong></li>
                                     </ul>
                                 </div>
@@ -400,9 +372,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="grid grid-cols-2 mx-auto">
+                            <div class="grid grid-cols-2 mx-auto gap-2">
                                 <div>
-                                    <ul class="text-center">
+                                    <ul class="text-end">
                                         <li class="text-[.9rem]"><strong>.rpm</strong></li>
                                     </ul>
                                 </div>
@@ -414,9 +386,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="grid grid-cols-2 mx-auto">
+                            <div class="grid grid-cols-2 mx-auto gap-2">
                                 <div>
-                                    <ul class="text-center">
+                                    <ul class="text-end">
                                         <li class="text-[.9rem]"><strong>.tar.gz</strong></li>
                                     </ul>
                                 </div>
@@ -428,9 +400,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="grid grid-cols-2 mx-auto">
+                            <div class="grid grid-cols-2 mx-auto gap-2">
                                 <div>
-                                    <ul class="text-center">
+                                    <ul class="text-end">
                                         <li class="text-[.9rem]"><strong>Snap</strong></li>
                                     </ul>
                                 </div>
@@ -440,9 +412,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="grid grid-cols-2 mx-auto">
+                            <div class="grid grid-cols-2 mx-auto gap-2">
                                 <div>
-                                    <ul class="text-center">
+                                    <ul class="text-end">
                                         <li class="text-[.9rem]"><strong>CLI</strong></li>
                                     </ul>
                                 </div>
@@ -455,19 +427,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="inst__items px-[1.5575rem]">
-                            <div class="w-[25%] mx-auto">
-                                <img src="./img/apple-logo.svg" alt="">
+                        <div class="inst__items px-[1.5575rem] lg:px-0">
+                            <div class="mx-auto">
+                                <img class="max-w-[100px] w-full max-h-[100px] h-full mx-auto" src="./img/apple-logo.svg" alt="">
                             </div>
                             <div class="text-center">
                                 <button class="text-center mb-[1.75rem] mt-[2rem] py-[0.5rem] px-[3.43rem] bg-[#0066B8] text-white">
-                                    <h6 class="font-medium text-[0.95rem]"><i class="fa-solid fa-download"></i> Windows</h6>
-                                    <p class="text-[0.75rem]"><small>Windows 8, 10, 11</small></p>
+                                    <h6 class="font-medium text-[0.95rem]"><i class="fa-solid fa-download"></i> Mac</h6>
+                                    <p class="text-[0.75rem]"><small>macOS 10.11+</small></p>
                                 </button>
                             </div>
-                            <div class="grid grid-cols-2 mx-auto">
+                            <div class="grid grid-cols-2 mx-auto gap-2">
                                 <div class="col-span-1">
-                                    <ul class="text-center">
+                                    <ul class="text-end">
                                         <li class="text-[.9rem]"><strong>.zip</strong></li>
                                     </ul>
                                 </div>
@@ -479,9 +451,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="grid grid-cols-2 mx-auto">
+                            <div class="grid grid-cols-2 mx-auto gap-2">
                                 <div>
-                                    <ul class="text-center">
+                                    <ul class="text-end">
                                         <li class="text-[.9rem]"><strong>CLI</strong></li>
                                     </ul>
                                 </div>
@@ -497,48 +469,56 @@
             </div>
         </section>
 
-        
-
-        <!-- <section class="dlos">
-            <div class="container">
-                <div class="dlos__wrapper">
-                    <div class="dlos__item">
-                        <div>
-                            <img src="#" alt="#">
-                        </div>
-                        <div>
-                            <button>Windows</button>
-                        </div>
-                        <div class="grid grid-cols-4">
-                            <ul>
-                                <li>User Installer</li>
-                                <li><a href="#">x64</a></li>
-                                <li><a href="#">x86</a></li>
-                                <li><a href="#">Arm64</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#">x64</a></li>
-                                <li><a href="#">x64</a></li>
-                                <li><a href="#">x64</a></li>
-                                <li><a href="#">x64</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#">x86</a></li>
-                                <li><a href="#">x86</a></li>
-                                <li><a href="#">x86</a></li>
-                                <li><a href="#">x86</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Arm64</a></li>
-                                <li><a href="#">Arm64</a></li>
-                                <li><a href="#">Arm64</a></li>
-                                <li><a href="#">Arm64</a></li>
-                            </ul>
+            <section class="privacy bg-[#f5f5f5]">
+                <div class="container">
+                    <div class="privacy__wrap text-center px-[0.8rem] pb-[0.8rem]">
+                        <div class="privacy__content px-[0.925rem]">
+                            <div class="privacy__item py-[2rem] px-[5.25rem]">
+                                <h3 class="mt-[1.25rem] mb-[0.265rem] text-[1.1rem] font-medium">Want new features sooner?</h3>
+                                <p class="font-[0.97rem]">Get the <a href="#" class="text-[#0071BC]">Insiders build</a> instead.</p>
+                            </div>
+                            <div class="privacy__item   py-[2rem] px-[5.25rem]">
+                                <h3 class="font-medium">Use <a href="#" class="text-[#0071BC]">vscode.dev</a> for quick edits online!</h3>
+                                <p>GitHub, Azure Repos, and local files.</p>
+                            </div>
+                            <div class="privacy__item py-[2rem] px-[5.25rem]">
+                                <h4 class="font-medium text-[0.82rem] mb-[0.625rem] mt-[1.25rem]">License and Privacy Terms</h4>
+                                <p class="text-[0.75rem] leading-8">By downloading and using Visual Studio Code, you agree to the <a href="#" class="text-[#0071BC]">license terms</a> and <a href="#">privacy statement</a>. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent pelase go see <a href="#" class="text-[#0071BC]">How to Disable Crash Reporting</a> to learn how to disable it.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section> -->
+            </section>
+
+            <footer class="footer bg-[#333333] text-white">
+                <div class="container">
+                    <div class="footer__wrap py-[1.564rem] px-[0.935rem]">
+                        <div class="footer__content flex items-center align-center gap-4 mb-[1.2rem]">
+                            <div class="footer__item flex gap-2">
+                                <p class="text-[0.85rem] hidden sm:inline-block">Hello from Seattle.</p>
+                                <a href="#" class="text-[0.875rem]">Follow @code</a>
+                            </div>
+                            <div class="footer__item flex gap-2">
+                                <a href="#" class="text-[0.7rem] bg-[#DDDDDD] text-black p-1 rounded-md"><i class="fa-brands fa-github"></i> Star</a>
+                                <a href="#" class="plat text-[0.7rem] bg-[#DDDDDD] text-black p-1 rounded-md">148,403</a>
+                            </div>
+                        </div>
+
+                        <div class="footer__content">
+                            <div class="footer__item block">
+                                <ul class="flex justify-start gap-4">
+                                    <li class="text-[0.75rem] inline-block"><a href="#">Support</a></li>
+                                    <li class="text-[0.75rem] inline-block"><a href="#">Privacy</a></li>
+                                    <li class="text-[0.75rem] inline-block"><a href="#">Terms of Use</a></li>
+                                    <li class="text-[0.75rem] inline-block"><a href="#">License</a></li>
+                                    <li class="text-[0.75rem] inline-block"><a href="#"><img class="bg-cover w-[3.85rem]" src="./img/microsoft-logo.png" alt=""></a><span>&copy;</span> 2023 Microsoft</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
 
         <script>
             const toggle = document.querySelector('.toggle__menu');

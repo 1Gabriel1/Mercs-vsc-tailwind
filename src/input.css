@@ -6,6 +6,12 @@
 .container {
     @apply mx-auto max-w-[90rem] w-full;
 }
+header .header__nav{
+    @apply max-h-0
+}
+header .header__nav.open{
+    @apply max-h-[21rem] overflow-y-scroll top-[2.8rem]
+}
 
 .platform::before {
 content: "";
@@ -13,12 +19,25 @@ position: absolute;
 width: 0px;
 height: 0px;
 border-left: 15px solid transparent;
-border-right: 15 px solid transparent;
+border-right: 15px solid transparent;
 border-bottom: 15px solid #25252B;
 top: -15px;
 right: 10px;
 }
-
+.plat::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    top: 50%;
+    left: -3px;
+    margin-top: -4px;
+    border-width: 4px 4px 4px 0;
+    border-right-color: #fafafa;
+}
 .features{
     @apply max-w-[90rem] w-full mx-auto
 }
@@ -29,28 +48,30 @@ right: 10px;
     @apply px-[0.94rem]
 }
 .features__item:nth-child(odd){
-    @apply flex flex-col items-center
+    @apply flex flex-col items-center md:flex-row md:items-start md:gap-10 md:px-[2rem]
 }
 .features__item:nth-child(even){
-    @apply flex flex-col items-center bg-[#f5f5f5]
+    @apply flex flex-col items-center bg-[#f5f5f5] md:flex-row-reverse md:items-start md:gap-10 md:px-[2rem]
 }
 .features__item img{
-    @apply  object-cover w-[60%]
+    @apply  object-cover w-[60%] md:w-[35%]
 }
 .features__content h1{
-    @apply mt-[.65rem] mb-[1.2rem] text-[1.2rem] font-thin text-[#242424]
+    @apply mt-[.65rem] mb-[1.2rem] text-[1.2rem] font-thin text-[#242424] md:text-[1.65rem] xl:text-[1.8625rem]
 }
 .features__content p{
-    @apply mb-[.625rem] text-[0.875125rem] font-normal text-justify
+    @apply mb-[.625rem] text-[0.875125rem] font-normal text-justify md:text-[1rem]  xl:text-[1.125rem]
 }
 .features__content a{
-    @apply text-[#0071BC] text-[0.875125rem] font-normal text-justify
+    @apply text-[#0071BC] text-[0.875125rem] font-normal text-justify md:text-[1rem]  xl:text-[1.125rem]
 }
 
 .vsC__item {
-    @apply px-[0.9375rem] mb-[0.625rem] text-[0.95rem] font-normal
+    @apply px-[0.9375rem] mb-[0.625rem] text-[0.95rem] font-normal lg:text-[1.075rem]
 }
 .vsC__wrap h2{
-    @apply text-[1.125rem] font-light
+    @apply text-[1.125rem] font-light lg:text-[1.75rem]
 } 
-
+.vsC__item img{
+    @apply lg:w-[20%]
+}
