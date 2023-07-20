@@ -7,37 +7,19 @@
     @apply mx-auto max-w-[90rem] w-full;
 }
 header .header__nav{
-    @apply max-h-0
+    @apply max-h-0 lg:max-h-[55px]
 }
 header .header__nav.open{
     @apply max-h-[21rem] overflow-y-scroll top-[2.8rem]
 }
 
-.platform::before {
-content: "";
-position: absolute;
-width: 0px;
-height: 0px;
-border-left: 15px solid transparent;
-border-right: 15px solid transparent;
-border-bottom: 15px solid #25252B;
-top: -15px;
-right: 10px;
+.platform::before{
+    @apply content-[""]  absolute w-0 h-0 border-l-[15px] border-r-[15px] border-b-[15px]  border-l-[transparent] border-r-[transparent] border-b-[#25252B] top-[-15px] right-[10px]
 }
 .plat::before{
-    content: '';
-    position: absolute;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    top: 50%;
-    left: -3px;
-    margin-top: -4px;
-    border-width: 4px 4px 4px 0;
-    border-right-color: #fafafa;
+    @apply content-[""]  absolute mt-[-4px] w-0 h-0 border-t-[6px] border-r-[6px] border-b-[6px]  border-t-[transparent] border-r-[#DDDDDD] border-b-[transparent] top-[45%] left-[-3px]
 }
+
 .features{
     @apply max-w-[90rem] w-full mx-auto
 }
@@ -63,7 +45,7 @@ right: 10px;
     @apply mb-[.625rem] text-[0.875125rem] font-normal text-justify md:text-[1rem]  xl:text-[1.125rem]
 }
 .features__content a{
-    @apply text-[#0071BC] text-[0.875125rem] font-normal text-justify md:text-[1rem]  xl:text-[1.125rem]
+    @apply text-[#0071BC] text-[0.875125rem] font-normal text-justify md:text-[1rem]  xl:text-[1.125rem] hover:underline
 }
 
 .vsC__item {
@@ -74,4 +56,20 @@ right: 10px;
 } 
 .vsC__item img{
     @apply lg:w-[20%]
+}
+
+.tns-outer{
+    @apply relative;
+}
+.tns-controls{
+    @apply flex items-center justify-between absolute top-[13rem] left-[1rem] w-[96%] z-[100]  min-[992px]:top-[6.125rem];
+}
+.tns-item{
+    @apply min-[992px]:!inline-flex
+}
+.tns-nav{
+    @apply hidden; 
+}
+button [data-action="start"] {
+    @apply hidden;
 }
