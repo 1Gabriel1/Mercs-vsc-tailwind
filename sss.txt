@@ -25,13 +25,13 @@
                     <div class="header__nav bg-[#2c2c32] z-10 overflow-hidden top-[-20vh] left-0 absolute h-[100vh] w-[100vw] duration-700 ease lg:duration-0  lg:static lg:overflow-visible lg:h-auto lg:w-auto lg:top-auto lg:right-auto lg:p-0 lg:align-center lg:px-[0.9] lg:mr-[1.5rem] lg:pr[0.9rem]">
                         <nav class="">
                             <ul class=" items-center text-white leading-10 lg:flex lg:pt-0 lg:items-center lg:top-0 lg:flex-start lg:leading-0">
-                                <li class="py-[10px] px-[12px] lg:inline-block lg:text-[#9d9d9d] lg:font-medium lg:hover:text-white cursor-pointer"><a class="width-full" href="#">Docs</a></li>
-                                <li class="py-[10px] px-[12px] lg:inline-block lg:text-[#9d9d9d] lg:font-medium lg:hover:text-white cursor-pointer"><a class="width-full" href="#">Updates</a></li>
-                                <li class="py-[10px] px-[12px] lg:inline-block lg:text-[#9d9d9d] lg:font-medium lg:hover:text-white cursor-pointer"><a class="width-full" href="#">Blog</a></li>
-                                <li class="py-[10px] px-[12px] lg:inline-block lg:text-[#9d9d9d] lg:font-medium lg:hover:text-white cursor-pointer"><a class="width-full" href="#">API</a></li>
-                                <li class="py-[10px] px-[12px] lg:inline-block lg:text-[#9d9d9d] lg:font-medium lg:hover:text-white cursor-pointer"><a class="width-full" href="#">Extensions</a></li>
-                                <li class="py-[10px] px-[12px] lg:inline-block lg:text-[#9d9d9d] lg:font-medium lg:hover:text-white cursor-pointer"><a class="" href="#">FAQ</a></li>
-                                <li class="py-[10px] px-[12px] lg:inline-block lg:text-[#9d9d9d] lg:font-medium lg:hover:text-white cursor-pointer"><a class="" href="#">Learn</a></li>
+                                <li class="py-[10px] px-[12px] lg:inline-block lg:text-[#9d9d9d] lg:font-medium lg:hover:text-white"><a href="#">Docs</a></li>
+                                <li class="py-[10px] px-[12px] lg:inline-block lg:text-[#9d9d9d] lg:font-medium lg:hover:text-white"><a href="#">Updates</a></li>
+                                <li class="py-[10px] px-[12px] lg:inline-block lg:text-[#9d9d9d] lg:font-medium lg:hover:text-white"><a href="#">Blog</a></li>
+                                <li class="py-[10px] px-[12px] lg:inline-block lg:text-[#9d9d9d] lg:font-medium lg:hover:text-white"><a href="#">API</a></li>
+                                <li class="py-[10px] px-[12px] lg:inline-block lg:text-[#9d9d9d] lg:font-medium lg:hover:text-white"><a href="#">Extensions</a></li>
+                                <li class="py-[10px] px-[12px] lg:inline-block lg:text-[#9d9d9d] lg:font-medium lg:hover:text-white"><a href="#">FAQ</a></li>
+                                <li class="py-[10px] px-[12px] lg:inline-block lg:text-[#9d9d9d] lg:font-medium lg:hover:text-white"><a href="#">Learn</a></li>
                                 <li class="py-[10px] px-[12px] lg:hidden"><a href="#">Search</a></li>
                                 <li class="bg-[#0066B8] w-full py-[10px] px-[12px] hover:bg-[#0065b8ab] lg:hidden font-medium"><a href="#"><i class="fa-solid fa-download"></i> Download</a></li>
                             </ul>
@@ -39,13 +39,10 @@
                     </div>
                     <div class="hidden lg:flex xl:flex lg:gap-2 xl:gap-0">
                         <a href="#" class="xl:hidden"><i class="fa-solid fa-magnifying-glass lg:text-[#9d9d9d] hover:text-white"></i></a>
-                        <form action="" class="hidden xl:block xl:relative ">
-                            <input type="search" placeholder="Search Docs" class="h-full p-[14.9px] bg-[#3d3d42] pl-10 text-white hover:bg-[rgba(255,255,255,.18)] outline-none focus:border-[0.5px] focus:border-[rgba(255,255,255,.5)] ">
-                            <span class="absolute right-[87%] top-[30%] cursor-pointer"><i class="fa-solid fa-magnifying-glass fa-rotate-90 text-white"></i></span>
-                            </form>
+                        <input type="search" placeholder="&#xf002; Search Docs" class="hidden xl:block p-[14.9px] bg-[#3d3d42] hover:bg-[#58585f]" style="font-family:Arial, FontAwesome; color:white;">
                         <button class=""><a href="#" class="bg-[#0066B8] text-white p-4 lg:font-medium hover:bg-[#0065b8ab]"><i class="fa-solid fa-download"></i> Download</a></button>
                     </div>
-                    <div class="toggle__menu hover:bg-[#0066B8] mt-[8px] mb-[8px] mr-[15px] lg:hidden p-1 rounded-md">
+                    <div class="toggle__menu hover:bg-[#0066B8] mt-[8px] mb-[8px] mr-[15px] lg:hidden">
                         <span class="block bg-[#fff] w-[21px] h-[2px] mb-1"></span>
                         <span class="block bg-[#fff] w-[21px] h-[2px] mb-1"></span>
                         <span class="block bg-[#fff] w-[21px] h-[2px] mb-1"></span>
@@ -58,7 +55,7 @@
                 <div class="version__wrapper">
                     <div class="py-[8.9px]">
                         <div class="text-center px-[3rem]">
-                            <p class="text-[1rem] text-center text-[#cccccc]"><a href="#" class="[text-[1rem] text-[#0098ff] underline hover:no-underline ">Version 1.80</a> is now available! Read about the new features and fixes from June.</p>
+                            <p class="text-[1rem] text-center text-[#cccccc]"><a href="#" class="[text-[1rem] text-[#0098ff] underline ">Version 1.80</a> is now available! Read about the new features and fixes from June.</p>
                         </div>
                     </div>
                 </div>
@@ -82,33 +79,33 @@
                                 <p class="text-[11.9px] font-extralight">Stable Build</p>
                             </button>
                             <div class="downTable">
-                                <table class="ddownTable bg-white w-[50rem] z-10 hidden top-[25] left-0 absolute  text-black border-[2px] border-blue-600 max-w-[332.26px] ">
+                                <table class="ddownTable bg-white z-10 overflow-hidden top-[20] left-0 absolute h-[100%] w-[100%] text-black border-[3px] border-blue-600">
                                     <tr>
                                         <th scope="col"></th>
                                         <th scope="col"></th>
-                                        <th class="font-normal text-[12.5px] py-[8.5px] px-[8px] md:text-[14.4px] md:py-[9px] md:px-[8px] lg::text-[15.2px] lg:py-[9.5px] lg:px-[8px] xl:text-[1rem] xl:py-[10px] xl:px-[8px] ">Stable</th>
-                                        <th class="bg-[#e3e3e3] font-normal text-[12.5px] py-[8.5px] px-[8px] md:text-[14.4px] md:py-[9px] md:px-[8px] lg::text-[15.2px] lg:py-[9.5px] lg:px-[8px] xl:text-[1rem] xl:py-[10px] xl:px-[8px] ">Insiders</th>
+                                        <th class="font-normal">Stable</th>
+                                        <th class="font-normal">Insiders</th>
                                     </tr>
                                     <tr>
-                                        <td class="w-[100%] max-w-[97.84 px] lg:max-w-[109.36px] p-[8.5px] text-[12.75px] md:p-[9px] md:text-[13.5px] lg:p-[9.5px] lg:text-[14.25px] xl:text-[15px] xl:p-[10px]"><strong>macOS</strong></td>
-                                        <td class="p-[8.5px] md:p-[9px] lg:p-[9.5px] xl:p-[10px]">Universal</td>
-                                        <td class="text-[#0066B8] p-[8.5px] md:p-[9px] lg:p-[9.5px] xl:p-[10px]"><a href="#"><i class="fa-solid fa-download"></i></a></td>
-                                        <td class="bg-[#e3e3e3] p-[8.5px] md:p-[9px] lg:p-[9.5px] xl:p-[10px]"><a href="#"><i class="fa-solid fa-download"></i></a></td>
+                                        <td class="p-[10px]"><strong>macOS</strong></td>
+                                        <td class="">Universal</td>
+                                        <td class="text-[#0066B8]"><a href="#"><i class="fa-solid fa-download"></i></a></td>
+                                        <td class="bg-[]"><a href="#"><i class="fa-solid fa-download"></i></a></td>
                                     </tr>
                                     <tr>
-                                        <td class="p-[8.5px] text-[12.75px] md:p-[9px] md:text-[13.5px] lg:p-[9.5px] lg:text-[14.25px] xl:text-[15px] xl:p-[10px]"><strong>Windows x64</strong></td>
-                                        <td class="p-[8.5px] md:p-[9px] lg:p-[9.5px] xl:p-[10px]">User Installer</td>
-                                        <td class="text-[#0066B8] p-[8.5px] md:p-[9px] lg:p-[9.5px] xl:p-[10px]"><i class="fa-solid fa-download"></i></td>
-                                        <td class="bg-[#e3e3e3] p-[8.5px] md:p-[9px] lg:p-[9.5px] xl:p-[10px]"><i class="fa-solid fa-download"></i></td>
+                                        <td><strong>Windows x64</strong></td>
+                                        <td>User Installer</td>
+                                        <td class="text-[#0066B8]"><i class="fa-solid fa-download"></i></td>
+                                        <td><i class="fa-solid fa-download"></i></td>
                                     </tr>
                                     <tr>
-                                        <td class="p-[8.5px] text-[12.75px] md:p-[9px] md:text-[13.5px] lg:p-[9.5px] lg:text-[14.25px] xl:text-[15px] xl:p-[10px]"><strong>Linux x64</strong>  </td>
-                                        <td class="p-[8.5px] md:p-[9px] lg:p-[9.5px] xl:p-[10px]">.deb<br>.rpm</td>
-                                        <td class=""><i class="fa-solid fa-download text-[#0066B8] pt-[8.5px] md:pt-[9px] lg:pt-[9.5px] xl:pt-[10px]"></i><br><i class="fa-solid fa-download text-[#0066B8] pb-[8.5px] md:pb-[9px] lg:pb-[9.5px] xl:pb-[10px]"></i></td>
-                                        <td class="bg-[#e3e3e3]"><i class="fa-solid fa-download pt-[8.5px] md:pt-[9px] lg:pt-[9.5px] xl:pt-[10px]"></i><br><i class="fa-solid fa-download pb-[8.5px] md:pb-[9px] lg:pb-[9.5px] xl:pb-[10px]"></i></td>
+                                        <td>Linus x64</td>
+                                        <td>.deb<br>.rpm</td>
+                                        <td class="text-[#0066B8]"><i class="fa-solid fa-download"></i></td>
+                                        <td><i class="fa-solid fa-download"></i></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="4" rowspan="2" class="text-[#0066B8] text-center align-center p-[8px] text-[14px] mx-auto"><p><a href="#" class="text-center">Other downloads</a> or <a href="#">open on web</a></p></td>
+                                        <td colspan="4" rowspan="2" class="text-[#0066B8] text-center align-center"><p><a href="#" class="text-center">Other downloads</a> or <a href="#">open on web</a></p></td>
                                     </tr>
                                 </table>
                             </div>
@@ -138,21 +135,29 @@
         <section class="exe">
             <div class="container">
                 <div class="exe__wrapper grid grid-cols-2 text-center md:flex md:justify-evenly">
-                    <div class="group p-8 hover:bg-[#ada1a149] cursor-pointer">
-                            <i class="fa-regular fa-lightbulb text-[2.65625rem] mb-2 text-[#444444] group-hover:text-[#0071bc]"></i>
-                            <p class="text-[1rem] md:text-[1.05rem] xl:text-[1.25rem] group-hover:text-black">IntelliSense</p>
+                    <div class="px-[15px] py-[17px] hover:bg-[#ffffff94]">
+                        <a href="#" class="">
+                            <i class="fa-regular fa-lightbulb text-[2.65625rem] mb-2 text-[#444444] hover:text-[#0071bc]"></i>
+                            <p class="text-[1rem] md:text-[1.05rem] xl:text-[1.25rem] ">IntelliSense</p>
+                        </a>
                     </div>
-                    <div class="group p-8 hover:bg-[#ada1a149] cursor-pointe">
-                            <i class="fa-solid fa-play text-[2.65625rem] mb-2 text-[#444444] group-hover:text-green-500"></i>
-                            <p class="text-[1rem] md:text-[1.05rem] xl:text-[1.25rem] group-hover:text-black">Run and Debug</p>
+                    <div class="px-[15px] py-[17px]">
+                        <a href="#">
+                            <i class="fa-solid fa-play text-[2.65625rem] mb-2 text-[#444444] hover:text-green-500"></i>
+                            <p class="text-[1rem] md:text-[1.05rem] xl:text-[1.25rem] ">Run and Debug</p>
+                        </a>
                     </div>
-                    <div class="group p-8 hover:bg-[#ada1a149] cursor-pointer">
-                            <i class="fa-solid fa-code-branch text-[2.65625rem] mb-2 text-[#444444] group-hover:text-red-600"></i>
-                            <p class="text-[1rem] md:text-[1.05rem] xl:text-[1.25rem] group-hover:text-black">Built-in Git</p>
+                    <div class="px-[15px] py-[17px]">
+                        <a href="#">
+                            <i class="fa-solid fa-code-branch text-[2.65625rem] mb-2 text-[#444444] hover:text-red-600"></i>
+                            <p class="text-[1rem] md:text-[1.05rem] xl:text-[1.25rem] ">Built-in Git</p>
+                        </a>
                     </div>
-                    <div class="group p-8 hover:bg-[#ada1a149] cursor-pointer">
-                            <i class="fa-solid fa-box-open text-[2.65625rem] mb-2 text-[#444444] group-hover:text-[#000]"></i>
-                            <p class="text-[1rem] md:text-[1.05rem] xl:text-[1.25rem] group-hover:text-black">Extensions</p>
+                    <div class="px-[15px] py-[17px]">
+                        <a href="#">
+                            <i class="fa-solid fa-box-open text-[2.65625rem] mb-2 text-[#444444] hover:text-amber-800"></i>
+                            <p class="text-[1rem] md:text-[1.05rem] xl:text-[1.25rem] ">Extensions</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -165,98 +170,84 @@
                 <div class="fback__pad">
                     <div class="kaw">
                         <div class="slider">
-                            <div class="fback__items flex gap-2 justify-start text-[0.531rem] py-10 lg:py-[60px] lg:ml-14 mx-14 ">
+                            <div class="fback__items flex gap-2 justify-start text-[0.531rem] py-10 mx-14 ">
                                 <div class=fback__img>
-                                    <img class="rounded-[50%]" src="./img/Una.jpg" alt="#">
+                                    <img class="rounded-[50%]" src="http://via.placeholder.com/200x200" alt="#">
                                 </div>
                                 <div class="fback__feed p-[5px]">
                                     <div class="flex justify-between">
-                                        <div class="group">
-                                            <h6 class="group-hover:text-[#0066B8] text-[0.75rem] font-medium cursor-pointer"><strong>Una Kravets</strong></h6>
-                                            <span class="text-[#6E6E6E] text-[0.625rem] group-hover cursor-pointer">@Una</span>
-                                        </div>
-                                        <i class="fa-brands fa-twitter text-[.82rem] text-[#6E6E6E] cursor-pointer"></i>
-                                    </div>
-                                   
-                                    <p class="text-[0.956rem]">VS <a href="#" class="text-[#0066B8] hover:underline">@code</a> does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️ </p>
-                                </div>
-                            </div>
-                            <div class="fback__items flex gap-2 justify-start text-[0.531rem] py-10 lg:py-[60px] lg:mx-9 mx-14 ">
-                                <div class=fback__img>
-                                    <img class="rounded-[50%]" src="./img/jadbox.jpg" alt="#">
-                                </div>
-                                <div class="fback__feed p-[5px]">
-                                    <div class="flex justify-between">
-                                        <div class="group"> 
-                                            <h6 class="text-[0.75rem] font-medium group-hover:text-[#0066B8] cursor-pointer"><strong>Jonathan Dunlap</strong></h6>
-                                            <span class="text-[#6E6E6E] text-[0.625rem] group-hover cursor-pointer">@jadbox</span>
-                                        </div>
+                                        <h6 class="text-[0.75rem] font-medium"><strong>Pavithra Kodmad</strong></h6>
                                         <i class="fa-brands fa-twitter text-[.82rem] text-[#6E6E6E]"></i>
                                     </div>
-                                    <p class="text-[0.956rem]">VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                                    <span class="text-[#6E6E6E] text-[0.625rem]">@PKodmad</span>
+                                    <p class="text-[0.956rem]">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy! </p>
                                 </div>
                             </div>
-                            <div class="fback__items flex gap-2 justify-start text-[0.531rem] py-10 lg:py-[60px]  lg:mr-14 mx-14 ">
+                            <div class="fback__items flex gap-2 justify-start text-[0.531rem] py-10 mx-14 ">
                                 <div class=fback__img>
-                                    <img class="rounded-[50%]" src="./img/PKodmad.jpg" alt="#">
+                                    <img class="rounded-[50%]" src="http://via.placeholder.com/200x200" alt="#">
                                 </div>
                                 <div class="fback__feed p-[5px]">
                                     <div class="flex justify-between">
-                                        <div class="group">
-                                            <h6 class="text-[0.75rem] font-medium group-hover:text-[#0066B8] cursor-pointer"><strong>Pavithra Kodmad</strong></h6>
-                                            <span class="text-[#6E6E6E] text-[0.625rem] group-hover cursor-pointer">@PKodmad</span>
-                                        </div>
+                                        <h6 class="text-[0.75rem] font-medium"><strong>Pavithra Kodmad</strong></h6>
                                         <i class="fa-brands fa-twitter text-[.82rem] text-[#6E6E6E]"></i>
                                     </div>
+                                    <span class="text-[#6E6E6E] text-[0.625rem]">@PKodmad</span>
+                                    <p class="text-[0.956rem]">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy! </p>
+                                </div>
+                            </div>
+                            <div class="fback__items flex gap-2 justify-start text-[0.531rem] py-10  mx-14 ">
+                                <div class=fback__img>
+                                    <img class="rounded-[50%]" src="http://via.placeholder.com/200x200" alt="#">
+                                </div>
+                                <div class="fback__feed p-[5px]">
+                                    <div class="flex justify-between">
+                                        <h6 class="text-[0.75rem] font-medium"><strong>Pavithra Kodmad</strong></h6>
+                                        <i class="fa-brands fa-twitter text-[.82rem] text-[#6E6E6E]"></i>
+                                    </div>
+                                    <span class="text-[#6E6E6E] text-[0.625rem]">@PKodmad</span>
                                     <p class="text-[0.956rem]">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy! </p>
                                 </div>
                             </div>
                         </div>
                         <div class="slider">
-                            <div class="fback__items flex gap-2 justify-start text-[0.531rem] py-10 lg:py-[60px] lg:ml-14 mx-14 ">
+                            <div class="fback__items flex gap-2 justify-start text-[0.531rem] py-10 mx-14">
                                 <div class=fback__img>
-                                    <img class="rounded-[50%]" src="./img/MrDarrenV.jpg" alt="#">
+                                    <img class="rounded-[50%]" src="http://via.placeholder.com/200x200" alt="#">
                                 </div>
                                 <div class="fback__feed p-[5px]">
                                     <div class="flex justify-between">
-                                        <div class="group">
-                                            <h6 class="text-[0.75rem] font-medium group-hover:text-[#0066B8] cursor-pointer"><strong>Darren</strong></h6>
-                                            <span class="text-[#6E6E6E] text-[0.625rem] group-hover: cursor-pointer">@McDarrenV</span>
-                                        </div>
+                                        <h6 class="text-[0.75rem] font-medium"><strong>Pavithra Kodmad</strong></h6>
                                         <i class="fa-brands fa-twitter text-[.82rem] text-[#6E6E6E]"></i>
                                     </div>
-                                    <p class="text-[0.956rem]">Just as I thought <a href="#" class="text-[#0066B8] hover:underline">@code</a> couldn't get better, out comes its Remote Development plugins that let you remote into containers as a dev environment! 😍 </p>
+                                    <span class="text-[#6E6E6E] text-[0.625rem]">@PKodmad</span>
+                                    <p class="text-[0.956rem]">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy! </p>
                                 </div>
                             </div>
-                            <div class="fback__items flex gap-2 justify-start text-[0.531rem]  py-10 lg:py-[60px] lg:mx-14 mx-14 " >
+                            <div class="fback__items flex gap-2 justify-start text-[0.531rem] py-10 mx-14">
                                 <div class=fback__img>
-                                    <img class="rounded-[50%]" src="./img/cassidoo.jpg" alt="#">
+                                    <img class="rounded-[50%]" src="http://via.placeholder.com/200x200" alt="#">
                                 </div>
                                 <div class="fback__feed p-[5px]">
                                     <div class="flex justify-between">
-                                        <div class="group">
-                                            <h6 class="text-[0.75rem] font-medium group-hover:text-[#0066B8] cursor-pointer"><strong>Cassidy Williams</strong></h6>
-                                            <span class="text-[#6E6E6E] text-[0.625rem] group-hover cursor-pointer">@cassidoo</span>
-                                        </div>
+                                        <h6 class="text-[0.75rem] font-medium"><strong>Pavithra Kodmad</strong></h6>
                                         <i class="fa-brands fa-twitter text-[.82rem] text-[#6E6E6E]"></i>
                                     </div>
-                                    <p class="text-[0.956rem]">I was a vim fan, but then discovered VS Code's Vim plugin, which lets me add in my vim keybindings. I can maintain my coding style without having to compromise on speed. </p>
+                                    <span class="text-[#6E6E6E] text-[0.625rem]">@PKodmad</span>
+                                    <p class="text-[0.956rem]">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy! </p>
                                 </div>
                             </div>
-                            <div class="fback__items flex gap-2 justify-start text-[0.531rem]  py-10 lg:py-[60px] lg:mr-14 mx-14 ">
+                            <div class="fback__items flex gap-2 justify-start text-[0.531rem] py-10 mx-14">
                                 <div class=fback__img>
-                                    <img class="rounded-[50%]" src="./img/lauragift21.jpg" alt="#">
+                                    <img class="rounded-[50%]" src="http://via.placeholder.com/200x200" alt="#">
                                 </div>
                                 <div class="fback__feed p-[5px]">
                                     <div class="flex justify-between">
-                                        <div class="group">
-                                            <h6 class="text-[0.75rem] font-medium group-hover:text-[#0066B8] cursor-pointer"><strong>Gift Engwueno</strong></h6>
-                                            <span class="text-[#6E6E6E] text-[0.625rem] group-hover cursor-pointer">@lauragift21</span>
-                                        </div>
+                                        <h6 class="text-[0.75rem] font-medium"><strong>Pavithra Kodmad</strong></h6>
                                         <i class="fa-brands fa-twitter text-[.82rem] text-[#6E6E6E]"></i>
                                     </div>
-                                    <p class="text-[0.956rem]">I love <a href="#" class="text-[#0066B8] hover:underline">@code</a> The built-in markdown previewer is awesome and the plugin system allows me to use GitLens, which makes my workflow so much easier.
-                                        Previous</p>
+                                    <span class="text-[#6E6E6E] text-[0.625rem]">@PKodmad</span>
+                                    <p class="text-[0.956rem]">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy! </p>
                                 </div>
                             </div>
                         </div>
@@ -390,9 +381,9 @@
                                 </div>
                                 <div>
                                     <ul class="flex gap-1">
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>x64</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>x86</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>Arm64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>x64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>x86</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Arm64</li>
                                     </ul>
                                 </div>
                             </div>
@@ -404,9 +395,9 @@
                                 </div>
                                 <div>
                                     <ul class="flex gap-1">
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1""><a href="#"></a>x64</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1""><a href="#"></a>x86</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1""><a href="#"></a>Arm64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>x64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>x86</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Arm64</li>
                                     </ul>
                                 </div>
                             </div>
@@ -418,9 +409,9 @@
                                 </div>
                                 <div>
                                     <ul class="flex gap-1">
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1""><a href="#"></a>x64</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1""><a href="#"></a>x86</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1""><a href="#"></a>Arm64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>x64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>x86</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Arm64</li>
                                     </ul>
                                 </div>
                             </div>
@@ -432,9 +423,9 @@
                                 </div>
                                 <div>
                                     <ul class="flex gap-1">
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>x64</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>x86</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>Arm64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>x64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>x86</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Arm64</li>
                                     </ul>
                                 </div>
                             </div>
@@ -461,9 +452,9 @@
                                 </div>
                                 <div>
                                     <ul class="flex gap-1">
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>x64</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>Arm32</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>Arm64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>x64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Arm32</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Arm64</li>
                                     </ul>
                                 </div>
                             </div>
@@ -475,9 +466,9 @@
                                 </div>
                                 <div>
                                     <ul class="flex gap-1">
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>x64</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>Arm32</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>Arm64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>x64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Arm32</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Arm64</li>
                                     </ul>
                                 </div>
                             </div>
@@ -489,9 +480,9 @@
                                 </div>
                                 <div>
                                     <ul class="flex gap-1">
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>x64</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>Arm32</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>Arm64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>x64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Arm32</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Arm64</li>
                                     </ul>
                                 </div>
                             </div>
@@ -503,7 +494,7 @@
                                 </div>
                                 <div>
                                     <ul class="flex gap-1">
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>Snap Store</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Snap Store</li>
                                     </ul>
                                 </div>
                             </div>
@@ -515,9 +506,9 @@
                                 </div>
                                 <div>
                                     <ul class="flex gap-1">
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>x64</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>Arm32</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>Arm64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>x64</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Arm32</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Arm64</li>
                                     </ul>
                                 </div>
                             </div>
@@ -541,9 +532,9 @@
                                 </div>
                                 <div class="">
                                     <ul class="flex gap-1 items-center">
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>Intel chip</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>Apple silicon</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1"><a href="#"></a>Universal</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Intel chip</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Apple silicon</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Universal</li>
                                     </ul>
                                 </div>
                             </div>
@@ -555,8 +546,8 @@
                                 </div>
                                 <div>
                                     <ul class="flex gap-1">
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] font-normal hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1""><a href="#"></a>Intel chip</li>
-                                        <li class="text-[0.75rem] text-white bg-[#0066B8] font-normal hover:bg-[#23527c] cursor-pointer rounded-[5.5px] px-1""><a href="#"></a>Apple silicon</li>                                    
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] font-normal hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Intel chip</li>
+                                        <li class="text-[0.75rem] text-white bg-[#0066B8] font-normal hover:bg-[#23527c] cursor-pointer"><a href="#"></a>Apple silicon</li>                                    
                                     </ul>
                                 </div>
                             </div>
@@ -597,11 +588,11 @@
                                 <p class="text-[0.85rem] hidden sm:inline-block">Hello from Seattle.</p>
                                 <a href="#" class="text-[0.875rem] hover:text-purple-500">Follow @code</a>
                             </div>
-                            <div class="footer__item flex items-center gap-2">
+                            <div class="footer__item flex gap-2">
                                 <a href="#" class="text-[0.7rem] bg-[#DDDDDD] text-black p-1 rounded-md hover:bg-[#dddddd94]"><i class="fa-brands fa-github"></i> Star</a>
-                                <a href="#" class="plat relative text-[0.7rem] bg-[#DDDDDD] text-black p-1 rounded-md  hover:text-blue-400">148,403</a>
-                                <!-- <div class="">
-                                </div> -->
+                                <div class="plat relative">
+                                <a href="#" class="text-[0.7rem] bg-[#DDDDDD] text-black p-1 rounded-md  hover:text-blue-400">148,403</a>
+                                </div>
                             </div>
                         </div>
 

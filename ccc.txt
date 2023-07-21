@@ -12,12 +12,9 @@ header .header__nav{
 header .header__nav.open{
     @apply max-h-[21rem] overflow-y-scroll top-[2.8rem]
 }
-.ddownTable {
-    @apply max-h-0
-}
-.ddownTable.open{
-    @apply max-h-[255.22px] block
-}
+/* dl .ddownTable.open{
+    @apply max-h-[243.22px] max-w-[332.26px] 
+} */
 
 .platform::before{
     @apply content-[""]  absolute w-0 h-0 border-l-[15px] border-r-[15px] border-b-[15px]  border-l-[transparent] border-r-[transparent] border-b-[#25252B] top-[-15px] right-[10px]
